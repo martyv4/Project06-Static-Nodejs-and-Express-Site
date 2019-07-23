@@ -8,7 +8,7 @@
                 "technologies" : ["JavaScript"],
                 "live_linK" : "",
                 "github_link" : "",
-                "image_url" : ""
+                "image_url" : [""]
             },
             {  
                 "id" : 1, 
@@ -17,7 +17,7 @@
                 "technologies" : ["JavaScript", "jQuery"],
                 "live_linK" : "",
                 "github_link" : "",
-                "image_url" : ""
+                "image_url" : [""]
             },
             {  
                 "id" : 2, 
@@ -26,7 +26,7 @@
                 "technologies" : ["JavaScript", "jQuery"],
                 "live_linK" : "",
                 "github_link" : "",
-                "image_url" : ""
+                "image_url" : [""]
             },
             {  
                 "id" : 3, 
@@ -35,16 +35,16 @@
                 "technologies" : ["JavaScript", "jQuery"],
                 "live_linK" : "",
                 "github_link" : "",
-                "image_url" : ""
+                "image_url" : [""]
             },
             {  
                 "id" : 4, 
                 "project_name" : "Public API Requests",
                 "description" : "Using JavaScript, you’ll create an employee directory by communicating with a third-party API (Application Programming Interface).",
                 "technologies" : ["JavaScript", "jQuery"],
-                "live_linK" : "",
-                "github_link" : "",
-                "image_url" : ""
+                "live_linK" : "https://martyv4.github.io/Project05-Public-API-Requests/",
+                "github_link" : "https://github.com/martyv4/Project05-Public-API-Requests",
+                "image_url" : [""]
             }
 
         ]
