@@ -8,7 +8,7 @@
                 "technologies" : ["JavaScript"],
                 "live_linK" : "",
                 "github_link" : "",
-                "image_url" : [""]
+                "image_url" : ["static/images/mypicture.png"]
             },
             {  
                 "id" : 1, 

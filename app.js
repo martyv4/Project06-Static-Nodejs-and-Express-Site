@@ -33,7 +33,12 @@ const dataJson = JSON.parse(dataFile);
 app.get('/', (req, res, next) => {
     try
     {
-    res.send(dataJson);
+        res.locals.heading = 'Who needs a website?';
+        res.locals.portfolioDescription = 'Video kew the radio star';
+        res.locals.dataJson = dataJson;
+        
+        res.render('index');
+    //res.send(dataJson);
     }
     catch (e) {
         next(new Error('Request could not be fulfilled'));
@@ -41,27 +46,30 @@ app.get('/', (req, res, next) => {
 });
 
 app.get('/about', (req, res, next) => {
+    //Go through this code and catch any errors
     try
     {
-    res.locals.name = "Yvonne Martinez";
-    res.locals.title = "Full Stack JavaScript Developer.";
-    res.locals.pitch = "I like to climb on things. I like to party.";
-    res.locals.skill1 = "Chat";
-    res.locals.skill2 = "Subscribe";
-    res.locals.skill3 = "Stab";
-    res.locals.skill4 = "Dance";
-    res.locals.skill5 = "Gutpunch";
-    res.locals.skill6 = "Hadouken";
+        res.locals.name = "Yvonne Martinez";
+        res.locals.title = "Full Stack JavaScript Developer.";
+        res.locals.pitch = "I like to climb on things. I like to party.";
+        res.locals.skill1 = "Chat";
+        res.locals.skill2 = "Subscribe";
+        res.locals.skill3 = "Stab";
+        res.locals.skill4 = "Dance";
+        res.locals.skill5 = "Gutpunch";
+        res.locals.skill6 = "Hadouken";
 
-    res.locals.linkedin_url = "yeah right.";
-    res.locals.github_url = "no";
-    res.locals.twitter_url = "whatever";
+        res.locals.linkedin_url = "yeah right.";
+        res.locals.github_url = "no";
+        res.locals.twitter_url = "whatever";
 
-    res.locals.phone = "(201) 933-3495";
-    res.locals.email = "admin@yvonne-new.com";
+        res.locals.phone = "(111) 111-1111";
+        res.locals.email = "admin@yvonne-new.com";
 
-    res.render('about');
+        //Find a pug file named about.pug and use to render the page content
+        res.render('about');
     }
+    //Catch the error
     catch (e) {
         next(new Error('Request could not be fulfilled'));
     }
