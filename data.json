@@ -5,46 +5,46 @@
                 "id" : 0, 
                 "project_name" : "A Random Quote Generator",
                 "description" : "A program that displays a randomly selected quote each time the user clicks a button.",
-                "technologies" : ["JavaScript"],
-                "live_linK" : "",
-                "github_link" : "",
-                "image_url" : ["static/images/mypicture.png"]
+                "technologies" : ["HTML", "CSS", "JavaScript"],
+                "live_link" : "https://martyv4.github.io/Random-Generator/",
+                "github_link" : "https://github.com/martyv4/Random-Generator",
+                "image_url" : ["static/images/randomCodeGenerator01.png"]
             },
             {  
                 "id" : 1, 
                 "project_name" : "List Pagination and Filtering",
                 "description" : "JavaScript to divide a long list into a series of \"pages\" and improve the user experience of a web page.",
-                "technologies" : ["JavaScript", "jQuery"],
-                "live_linK" : "",
-                "github_link" : "",
+                "technologies" : ["HTML", "CSS", "JavaScript", "jQuery"],
+                "live_link" : "https://martyv4.github.io/Proj02-list_pagination_filtering/",
+                "github_link" : "https://github.com/martyv4/Proj02-list_pagination_filtering",
                 "image_url" : [""]
             },
             {  
                 "id" : 2, 
                 "project_name" : "Interactive Form",
                 "description" : "Enhance a form so that it’s engaging, interactive, and easy to use.",
-                "technologies" : ["JavaScript", "jQuery"],
-                "live_linK" : "",
-                "github_link" : "",
+                "technologies" : ["HTML", "CSS", "JavaScript", "jQuery"],
+                "live_link" : "https://martyv4.github.io/Project-03-Interactive-Form/",
+                "github_link" : "https://github.com/martyv4/Project-03-Interactive-Form",
                 "image_url" : [""]
             },
             {  
                 "id" : 3, 
                 "project_name" : "OOP Game Show App",
                 "description" : "Create a browser-based, word guessing game: \"Phrase Hunter.\" You’ll use JavaScript and OOP (Object-Oriented Programming) to select a random, hidden phrase.",
-                "technologies" : ["JavaScript", "jQuery"],
-                "live_linK" : "",
-                "github_link" : "",
+                "technologies" : ["HTML", "CSS", "JavaScript", "jQuery"],
+                "live_link" : "https://martyv4.github.io/Project04-OOB-DoraExplorerAdventures/",
+                "github_link" : "https://github.com/martyv4/Project04-OOB-DoraExplorerAdventures",
                 "image_url" : [""]
             },
             {  
                 "id" : 4, 
                 "project_name" : "Public API Requests",
                 "description" : "Using JavaScript, you’ll create an employee directory by communicating with a third-party API (Application Programming Interface).",
-                "technologies" : ["JavaScript", "jQuery"],
-                "live_linK" : "https://martyv4.github.io/Project05-Public-API-Requests/",
+                "technologies" : ["HTML", "CSS", "JavaScript", "jQuery"],
+                "live_link" : "https://martyv4.github.io/Project05-Public-API-Requests/",
                 "github_link" : "https://github.com/martyv4/Project05-Public-API-Requests",
-                "image_url" : [""]
+                "image_url" : ["static/images/Public-API-Requests.png"]
             }
 
         ]

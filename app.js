@@ -63,7 +63,7 @@ app.get('/about', (req, res, next) => {
         res.locals.github_url = "no";
         res.locals.twitter_url = "whatever";
 
-        res.locals.phone = "(111) 111-1111";
+        res.locals.phone = "(646) 111-1111";
         res.locals.email = "admin@yvonne-new.com";
 
         //Find a pug file named about.pug and use to render the page content
@@ -78,7 +78,10 @@ app.get('/about', (req, res, next) => {
 app.get('/projects/:id', (req, res, next) => {
     try
     {
-        res.send("You are asking for id#" + req.params.id);
+        //console.log(dataJson.projects[parseInt(req.params.id)]);
+        res.locals.project = dataJson.projects[parseInt(req.params.id)]; //param ID is string, have to cast as int
+        res.render('project');
+        //res.send("You are asking for id#" + req.params.id);
     }
     catch (e) {
         next(new Error('Request could not be fulfilled'));
