@@ -1,7 +1,7 @@
 /*
     1) First step is to establish the express application
         require means include (we are drawing it from somewhere else)
-        create an express app
+        https://expressjs.com/en/4x/api.html#res.send
         http://localhost:3000
   
     2) 
@@ -17,7 +17,8 @@
     4) telling the application to respond to request
 
 */
-const express = require('express');  //1
+// Step 1 create an express app
+const express = require('express');  
 const app = express();               //1
 
 const path = require('path');
