@@ -1,4 +1,3 @@
-//- this is the base template
 extends layout.pug     
 
 block content 
@@ -8,10 +7,8 @@ block content
     .grid-x
       .cell.small-6.medium-9.large-9
 
-        //- Add your name from the app.js file
         h1 #{name}
 
-        //- Feel free to personalize the title below
         p.lead.text-light
           | #{title}
 
@@ -38,9 +35,9 @@ block content
           li #{email}
 
         //- Add URLs to the hrefs below to link to your social media accounts.
-        a.button.expanded(href='#{linkedin_url}' target='_blank') LinkedIn
-        a.button.expanded(href='#{github_url}' target='_blank') GitHub
-        a.button.expanded(href='#{twitter_url}' target='_blank') Twitter
+        a.button.expanded(href=linkedin_url target='_blank') LinkedIn
+        a.button.expanded(href=github_url target='_blank') GitHub
+        a.button.expanded(href=twitter_url target='_blank') Twitter
   nav.grid-container.portfolio-breadcrumb
     a(href='/') ← Back
   

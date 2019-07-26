@@ -25,17 +25,19 @@ const path = require('path');
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
 
+//This is middleware to access the public folder via route /static
 app.use('/static', express.static(path.join(__dirname, 'public')))
 
 var fs = require("fs");
 const dataFile = fs.readFileSync('data.json', 'utf8');
 const dataJson = JSON.parse(dataFile);
 
+// define route for main page at /
 app.get('/', (req, res, next) => {
     try
     {
-        res.locals.heading = 'Who needs a website?';
-        res.locals.portfolioDescription = 'Video kew the radio star';
+        res.locals.heading = 'My Portfolio';
+        res.locals.portfolioDescription = 'Hello my name is Yvonne Martinez, here are some samples of some of my application working using JavaScript and jQuery.';
         res.locals.dataJson = dataJson;
         
         res.render('index');
@@ -46,23 +48,24 @@ app.get('/', (req, res, next) => {
     }
 });
 
+// define route for About page at /about
 app.get('/about', (req, res, next) => {
     //Go through this code and catch any errors
     try
     {
         res.locals.name = "Yvonne Martinez";
         res.locals.title = "Full Stack JavaScript Developer.";
-        res.locals.pitch = "I like to climb on things. I like to party.";
-        res.locals.skill1 = "Chat";
-        res.locals.skill2 = "Subscribe";
-        res.locals.skill3 = "Stab";
-        res.locals.skill4 = "Dance";
-        res.locals.skill5 = "Gutpunch";
-        res.locals.skill6 = "Hadouken";
+        res.locals.pitch = "I enjoy learning new applications, working with my colleagues and solving problems.";
+        res.locals.skill1 = "Learning Management Systems";
+        res.locals.skill2 = "Web Development";
+        res.locals.skill3 = "Oracle and Microsoft SQL Server";
+        res.locals.skill4 = "SharePoint";
+        res.locals.skill5 = "Camtasia";
+        res.locals.skill6 = "Microsoft Office Suite";
 
-        res.locals.linkedin_url = "yeah right.";
-        res.locals.github_url = "no";
-        res.locals.twitter_url = "whatever";
+        res.locals.linkedin_url = "http://linkedin.com/";
+        res.locals.github_url = "http://github.com/martyv4";
+        res.locals.twitter_url = "http://twitter.com/";
 
         res.locals.phone = "(646) 111-1111";
         res.locals.email = "admin@yvonne-new.com";
@@ -76,6 +79,7 @@ app.get('/about', (req, res, next) => {
     }
 });
 
+// define route for view Project page at /projects/:id
 app.get('/projects/:id', (req, res, next) => {
     try
     {
@@ -98,7 +102,7 @@ app.use((err, req, res, next) => {
     }
   });
 
-  //default route - respond to anything besides the three above
+//default route - respond to anything besides the four above
 //with HTTP 404
 app.use((req, res, next) => {
     console.log("Requested route is undefined.");
