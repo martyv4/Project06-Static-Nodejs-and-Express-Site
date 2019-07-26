@@ -21,27 +21,32 @@
 const express = require('express');  
 const app = express();               //1
 
+//acquire path module, use to join directory of project (__dirname) with views folder, set as views path
 const path = require('path');
 app.set('views', path.join(__dirname, 'views'));
+//specify Pug as the view engine for the app
 app.set('view engine', 'pug');
 
 //This is middleware to access the public folder via route /static
 app.use('/static', express.static(path.join(__dirname, 'public')))
 
+//acquire fs [filesystem] module, read the data.json file text, parse and convert to JSON object instance
 var fs = require("fs");
 const dataFile = fs.readFileSync('data.json', 'utf8');
 const dataJson = JSON.parse(dataFile);
 
-// define route for main page at /
+// define route for main page at / - Home view
 app.get('/', (req, res, next) => {
+    //Go through this code and catch any errors
     try
     {
+        //specify local variables
         res.locals.heading = 'My Portfolio';
         res.locals.portfolioDescription = 'Hello my name is Yvonne Martinez, here are some samples of some of my application working using JavaScript and jQuery.';
         res.locals.dataJson = dataJson;
         
+        //render this view with index Pug template
         res.render('index');
-    //res.send(dataJson);
     }
     catch (e) {
         next(new Error('Request could not be fulfilled'));
@@ -81,6 +86,7 @@ app.get('/about', (req, res, next) => {
 
 // define route for view Project page at /projects/:id
 app.get('/projects/:id', (req, res, next) => {
+    //Go through this code and catch any errors
     try
     {
         //console.log(dataJson.projects[parseInt(req.params.id)]);
@@ -93,24 +99,29 @@ app.get('/projects/:id', (req, res, next) => {
     }
 });
 
-//error route: reached from any of the three above
-//in the event of a runtime error
-app.use((err, req, res, next) => {
-    console.log(err);    
-    if(!res.headersSent){
-      res.status(500).send(err.message);
-    }
-  });
-
-//default route - respond to anything besides the four above
+//default route - respond to anything besides the three above
 //with HTTP 404
 app.use((req, res, next) => {
     console.log("Requested route is undefined.");
-    res.sendStatus(404);
+    next(new Error('Requested route is undefined.'));
+    //res.sendStatus(404);
 });
 
+//error route: reached from any of the four above
+//in the event of a runtime error or mismatched route (defined as error in Extra Credit)
+app.use((err, req, res, next) => {
+    console.log(err);    
+    if(!res.headersSent){
+      res.status(500);
+      res.render('error', {error: err});
+    }
+  });
+
+//specify port 3000 as the application location at localhost
 const portNumber = 3000;
+//initiate the app on port 3000
 app.listen(portNumber);
+//log that the application is ready for requests
 console.log("App started on localhost at port " + portNumber);
 
 

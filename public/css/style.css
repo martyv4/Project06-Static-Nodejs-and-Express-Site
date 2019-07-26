@@ -148,3 +148,7 @@ a:hover{
 .portfolio-bio{
     line-height: 25px;
 }
+
+.grid-container {
+  background-color: #e5e9ebd0;
+}
