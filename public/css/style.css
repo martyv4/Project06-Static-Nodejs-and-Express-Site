@@ -1,15 +1,59 @@
 
 h1,h2,h3,h4,h5,p{
-  font-family: 'Merriweather', serif;
+    font-family: Satisfy, cursive;
+    font-weight:normal;
+    color: rgb(116, 40, 5);
+    border-radius: 0.35em;
+    
 }
 
   h5{
-    font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    
     letter-spacing: 2.5px;
-    -webkit-text-transform: uppercase;
     text-transform: uppercase;
-  }
+    color: rgba(53, 36, 82, 0.9);
+    font-family: Satisfy, cursive;
+    font-weight:normal;
+    color: rgb(116, 40, 5);
+    border-radius: 0.35em;
+    text-shadow: 0 1px 0 #ccc,
+                    0 2px 0 #c9c9c9,
+                    0 3px 0 #bbb,
+                    0 4px 0 #b9b9b9,
+                    0 5px 0 #aaa,
+                    0 6px 1px rgba(0,0,0,.1),
+                    0 0 5px rgba(0,0,0,.1),
+                    0 1px 3px rgba(0,0,0,.3),
+                    0 3px 5px rgba(0,0,0,.2),
+                    0 5px 10px rgba(0,0,0,.25),
+                    0 10px 10px rgba(0,0,0,.2),
+                    0 20px 20px rgba(0,0,0,.15);
 
+                    
+}
+
+  h1 {
+  animation-name: slide;
+  font-family: Satisfy, cursive;
+  font-weight:normal;
+  color: rgb(116, 40, 5);
+  border-radius: 0.35em;
+  text-shadow: 0 1px 0 #ccc,
+                  0 2px 0 #c9c9c9,
+                  0 3px 0 #bbb,
+                  0 4px 0 #b9b9b9,
+                  0 5px 0 #aaa,
+                  0 6px 1px rgba(0,0,0,.1),
+                  0 0 5px rgba(0,0,0,.1),
+                  0 1px 3px rgba(0,0,0,.3),
+                  0 3px 5px rgba(0,0,0,.2),
+                  0 5px 10px rgba(0,0,0,.25),
+                  0 10px 10px rgba(0,0,0,.2),
+                  0 20px 20px rgba(0,0,0,.15);
+  /* @keyframes duration | timing-function | delay | 
+  iteration-count | direction | fill-mode | play-state | name */
+  
+}
   h6{
     letter-spacing: 2.5px;
     -webkit-text-transform: uppercase;
@@ -20,6 +64,7 @@ h1,h2,h3,h4,h5,p{
   p{
     font-size: 15px;
     color: #666;
+
   }
 
 .round{
@@ -31,8 +76,31 @@ h1,h2,h3,h4,h5,p{
 }
 
 .button{
-  background-color: #333;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    width: 95%;
+    max-width: 420px;
+    padding: 10px 15px 15px;;
+    margin: 10px auto auto;
+    background: rgb(133, 4, 4);
+    border-radius: 0.25em;
+    border: 1px solid rgba(92, 87, 87, 0.3);
 }
+.btn-container .btn {
+  display: inline-block;
+  cursor: pointer;
+  font-size: 0.85em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.9);
+  padding: 0.75em 1.5em;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 0.35em;
+  transition: .4s ease-out;
+  outline: none;
+}
+
 
 .button:hover{
   background-color: #111;
@@ -43,7 +111,7 @@ a{
 }
 
 a:hover{
-  color: #111;
+  color: rgb(223, 32, 14);
 }
 
 .image{
@@ -134,6 +202,20 @@ a:hover{
 
   .portfolio-meta .button{
     margin-bottom: 5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    width: 95%;
+    max-width: 420px;
+    padding: 10px 15px 15px;;
+    margin: 10px auto auto;
+    background-image: linear-gradient(rgb(252, 244, 244), transparent 50%),
+    linear-gradient(0deg,#fff, transparent 10%), url('../images/arno-smit-keynTanTG_4-unsplash.jpg');
+    background-repeat: no-repeat;
+    /*background: rgb(238, 166, 166);*/
+    border-radius: 0.25em;
+    border: 1px solid rgba(100, 100, 100, 0.3);
   }
 
 .portfolio-project p{
@@ -142,7 +224,7 @@ a:hover{
 
 .portfolio-project li{
   font-size: 13px;
-  color: #444;
+  color: rgb(104, 11, 11);
 }
 
 .portfolio-bio{
@@ -150,5 +232,49 @@ a:hover{
 }
 
 .grid-container {
-  background-color: #e5e9ebd0;
+  background-color: #e2d2d7d0;
 }
+.box {
+  
+  /* Apply a fluid width of 90% and a height of 300px. 
+  The width of .box should be no wider than 600px. */  
+  width: 90%;
+  height: 300px;
+  max-width: 600px;
+
+  /* Add 20 pixels of padding on all four sides. */
+  padding: 20px;
+  
+  /* Apply a 2px solid border to each side. */
+  border: 2px solid #8292b1;
+  
+  /* Use margins to center .box on the page. */
+  margin: auto;
+  
+  /* Prevent the contents of .box from overflowing. */
+  overflow-y: scroll;
+  
+  /* Force border-width and padding values into the total width and height of .box */
+  box-sizing: border-box;
+  display: inline-block;
+  max-width: 100%;
+  margin-bottom: 1rem;
+  border: solid 4px#e2d2d7d0;
+  border-radius: 0;
+  box-shadow: 0 0 0 1px rgba(10, 10, 10, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: bold;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  position: relative;
+  user-select: none;
+  content: attr(data-text);
+  filter: blur(0.02em);
+  background: linear-gradient(45deg, rgb(240, 232, 232), rgb(238, 237, 234), rgb(241, 179, 218), rgb(238, 218, 235), rgb(240, 178, 178));
+   mix-blend-mode: multiply;
+
+}
+
