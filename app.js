@@ -19,7 +19,7 @@
 */
 // Step 1 create an express app
 const express = require('express');  
-const app = express();               //1
+const app = express();               
 
 //acquire path module, use to join directory of project (__dirname) with views folder, set as views path
 const path = require('path');
