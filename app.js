@@ -31,7 +31,7 @@ app.set('view engine', 'pug');
 app.use('/static', express.static(path.join(__dirname, 'public')))
 
 //acquire fs [filesystem] module, read the data.json file text, parse and convert to JSON object instance
-var fs = require("fs");
+const fs = require("fs");
 const dataFile = fs.readFileSync('data.json', 'utf8');
 const dataJson = JSON.parse(dataFile);
 
@@ -107,15 +107,17 @@ app.use((req, res, next) => {
     //res.sendStatus(404);
 });
 
+const newLocal = 500;
 //error route: reached from any of the four above
 //in the event of a runtime error or mismatched route (defined as error in Extra Credit)
 app.use((err, req, res, next) => {
     console.log(err);    
     if(!res.headersSent){
-      res.status(500);
+      res.status(newLocal);
       res.render('error', {error: err});
     }
   });
+  
 
 //specify port 3000 as the application location at localhost
 const portNumber = 3000;
@@ -123,6 +125,8 @@ const portNumber = 3000;
 app.listen(portNumber);
 //log that the application is ready for requests
 console.log("App started on localhost at port " + portNumber);
+
+
 
 
 

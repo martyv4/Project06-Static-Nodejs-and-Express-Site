@@ -4,7 +4,7 @@ h1,h2,h3,h4,h5,p{
     font-weight:normal;
     color: rgb(116, 40, 5);
     border-radius: 0.35em;
-    
+
 }
 
   h5{
@@ -52,7 +52,7 @@ h1,h2,h3,h4,h5,p{
                   0 20px 20px rgba(0,0,0,.15);
   /* @keyframes duration | timing-function | delay | 
   iteration-count | direction | fill-mode | play-state | name */
-  
+
 }
   h6{
     letter-spacing: 2.5px;
@@ -63,8 +63,8 @@ h1,h2,h3,h4,h5,p{
 
   p{
     font-size: 15px;
-    color: #666;
-
+    color: rgb(75, 75, 77);
+    font-family: Satisfy, cursive;
   }
 
 .round{
@@ -211,9 +211,6 @@ a:hover{
     padding: 10px 15px 15px;;
     margin: 10px auto auto;
     background-image: linear-gradient(rgb(252, 244, 244), transparent 50%),
-    linear-gradient(0deg,#fff, transparent 10%), url('../images/arno-smit-keynTanTG_4-unsplash.jpg');
-    background-repeat: no-repeat;
-    /*background: rgb(238, 166, 166);*/
     border-radius: 0.25em;
     border: 1px solid rgba(100, 100, 100, 0.3);
   }
@@ -265,7 +262,7 @@ a:hover{
   display: flex;
   align-items: center;
   justify-content: center;
-
+ 
   font-weight: bold;
   font-family: sans-serif;
   text-transform: uppercase;
@@ -274,7 +271,11 @@ a:hover{
   content: attr(data-text);
   filter: blur(0.02em);
   background: linear-gradient(45deg, rgb(240, 232, 232), rgb(238, 237, 234), rgb(241, 179, 218), rgb(238, 218, 235), rgb(240, 178, 178));
-   mix-blend-mode: multiply;
-
+  mix-blend-mode: multiply;
 }
 
+.group::after {
+  content: '';
+  display: table;
+  clear: both;
+}
