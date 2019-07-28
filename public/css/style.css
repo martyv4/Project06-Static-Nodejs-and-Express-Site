@@ -33,6 +33,8 @@ h1,h2,h3,h4,h5,p{
 }
 
   h1 {
+  font-size: 30px;
+  padding: 0px 15px 0px 0px;
   animation-name: slide;
   font-family: Satisfy, cursive;
   font-weight:normal;
@@ -68,11 +70,14 @@ h1,h2,h3,h4,h5,p{
   }
 
 .round{
-  border-radius: 5px;
+  border-radius: 20px;
 }
 
 .text-light{
+
   color: #666;
+  font-family: Satisfy, cursive;
+  font-size: 15px;
 }
 
 .button{

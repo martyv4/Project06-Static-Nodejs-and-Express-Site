@@ -9,8 +9,8 @@
                 "CSS",
                 "JavaScript"
             ],
-            "live_link": "href=https://martyv4.github.io/Random-Generator/",
-            "github_link": "https://github.com/martyv4/Random-Generator",
+            "live_link": "https://martyv4.github.io/Project01-Random-Generator/",
+            "github_link": "https://github.com/martyv4/Project01-Random-Generator",
             "image_url": [
                 "/static/images/rsz_randomcodegenerator01.png",
                 "/static/images/rsz_randomcodegenerator02.png",
@@ -27,8 +27,8 @@
                 "JavaScript",
                 "jQuery"
             ],
-            "live_link": "https://martyv4.github.io/Proj02-list_pagination_filtering/",
-            "github_link": "https://github.com/martyv4/Proj02-list_pagination_filtering",
+            "live_link": "https://martyv4.github.io/Project02-list_pagination_filtering/",
+            "github_link": "https://github.com/martyv4/Project02-list_pagination_filtering",
             "image_url": [
                 "/static/images/rsz_list-pagination-filtering01.png",
                 "/static/images/rsz_list-pagination-filtering02.png",
