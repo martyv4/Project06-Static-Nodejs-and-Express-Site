@@ -5,7 +5,7 @@
 
 ### Objective: 
 ```
-My Portfolio project is to showcase my first 5 projects using node.js, express and pug templates.
+My Portfolio project is to showcase my first 5 projects using node.js, Express JS and pug templates.
  ```
 ### Instructions: 
  ```  
@@ -19,7 +19,7 @@ My Portfolio project is to showcase my first 5 projects using node.js, express a
  ### Tools/Languages Used: 
 ```
     -- Javascript and jQuery 
-    -- HTML/CSS 
+    -- CSS 
     -- Node, NPM, Express, Pug
 ```
 ## Features: 

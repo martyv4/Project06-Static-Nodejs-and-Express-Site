@@ -13,7 +13,7 @@ block content
     .grid-x.grid-margin-x.small-up-2.medium-up-2.large-up-3
 
       each project in dataJson.projects
-        .cell
+        .cell.projectcell
           a(href='projects/' + project.id) Go to Project Page
-            img.thumbnail(src=project.image_url[0])
+            img.thumbnail(src=project.main_image_url)
             h5= project.project_name

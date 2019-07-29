@@ -11,7 +11,8 @@
             ],
             "live_link": "https://martyv4.github.io/Project01-Random-Generator/",
             "github_link": "https://github.com/martyv4/Project01-Random-Generator",
-            "image_url": [
+            "main_image_url": "/static/images/rsz_randomcodegenerator.png",
+            "project_image_url": [
                 "/static/images/rsz_randomcodegenerator01.png",
                 "/static/images/rsz_randomcodegenerator02.png",
                 "/static/images/rsz_randomcodegenerator03.png"
@@ -29,7 +30,8 @@
             ],
             "live_link": "https://martyv4.github.io/Project02-list_pagination_filtering/",
             "github_link": "https://github.com/martyv4/Project02-list_pagination_filtering",
-            "image_url": [
+            "main_image_url": "/static/images/rsz_list-pagination-filtering.png",
+            "project_image_url": [
                 "/static/images/rsz_list-pagination-filtering01.png",
                 "/static/images/rsz_list-pagination-filtering02.png",
                 "/static/images/rsz_list-pagination-filtering03.png"
@@ -47,7 +49,8 @@
             ],
             "live_link": "https://martyv4.github.io/Project-03-Interactive-Form/",
             "github_link": "https://github.com/martyv4/Project-03-Interactive-Form",
-            "image_url": [
+            "main_image_url": "/static/images/rsz_interactiveform.png",
+            "project_image_url": [
                 "/static/images/rsz_interactiveform01.png",
                 "/static/images/rsz_interactiveform02.png",
                 "/static/images/rsz_interactiveform03.png"
@@ -65,7 +68,8 @@
             ],
             "live_link": "https://martyv4.github.io/Project04-OOB-DoraExplorerAdventures/",
             "github_link": "https://github.com/martyv4/Project04-OOB-DoraExplorerAdventures",
-            "image_url": [
+            "main_image_url": "/static/images/rsz_oob-game-show-app.png",
+            "project_image_url": [
                 "/static/images/rsz_oob-game-show-app01.png",
                 "/static/images/rsz_oob-game-show-app02.png",
                 "/static/images/rsz_oob-game-show-app03.png"
@@ -83,7 +87,8 @@
             ],
             "live_link": "https://martyv4.github.io/Project05-Public-API-Requests/",
             "github_link": "https://github.com/martyv4/Project05-Public-API-Requests",
-            "image_url": [
+            "main_image_url": "/static/images/rsz_public-api-requests.png",
+            "project_image_url": [
                 "/static/images/rsz_public-api-requests01.png",
                 "/static/images/rsz_public-api-requests02.png",
                 "/static/images/rsz_public-api-requests03.png"

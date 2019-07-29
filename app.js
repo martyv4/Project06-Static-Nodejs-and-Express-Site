@@ -35,6 +35,11 @@ const fs = require("fs");
 const dataFile = fs.readFileSync('data.json', 'utf8');
 const dataJson = JSON.parse(dataFile);
 
+//app.get('/favicon.ico', (req, res) => res.status(204));
+//Redirect favicon.ico to static/favicon.ico:  https://stackoverflow.com/questions/19035373/how-do-i-redirect-in-expressjs-while-passing-some-context
+//copied the favicon.ico to the public folder
+app.get('/favicon.ico', (req, res) => res.redirect('/static/favicon.ico'));
+
 // define route for main page at / - Home view
 app.get('/', (req, res, next) => {
     //Go through this code and catch any errors
