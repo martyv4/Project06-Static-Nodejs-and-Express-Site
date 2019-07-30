@@ -32,4 +32,17 @@ Functionality:
  * Select images, buttons, links to launch href
  * Click on a portfolio image to view additional details
  * Navigate through buttons to view projects on the web
+```
+#### Layout Changes
+```
+CSS:
+ * Changed the font style, font-size, font-color
+ * Added shadow to the fonts
+ * Changed the background color
+ * Added opacity to the project cell div
+ * Added hover effect to buttons to change color
+ * Defined box class used to display project details on each project page.  Added a nice overflow effect that scrolls
+ Page HTML from pug template:
+ * Created my own personal logo and added to layout sidebar
+ ```
 
