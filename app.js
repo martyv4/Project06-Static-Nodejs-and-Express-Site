@@ -113,7 +113,7 @@ app.use((req, res, next) => {
 });
 
 const newLocal = 500;
-//error route: reached from any of the four above
+//error route: reached from any of the four above (error handler)
 //in the event of a runtime error or mismatched route (defined as error in Extra Credit)
 app.use((err, req, res, next) => {
     console.log(err);    
